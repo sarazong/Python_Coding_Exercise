@@ -43,14 +43,14 @@ def collect_data(pdf, start_county, end_county):
     # convert all the columns to numeric       
     daily_data = daily_data.apply(pd.to_numeric)
 
-    # create the desired subset of data
+    # create the desired subset of data and aggregate data accordingly
     subset = daily_data.loc[start_county : end_county]
 
     race_sum = subset.sum(level = "race", axis = 1)
 
     ethnicity_sum = subset.sum(level = "ethnicity", axis = 1)
 
-
+    # save final dataframes into an excel file
     writer = pd.ExcelWriter(path + "Mississipi_covid_case_" + pdf.split(sep = ".")[0] + ".xlsx", engine = "xlsxwriter")
     race_sum.to_excel(writer, sheet_name = "race_sum")
     ethnicity_sum.to_excel(writer, sheet_name = "ethnicity_sum")
