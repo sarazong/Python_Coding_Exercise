@@ -1,7 +1,3 @@
 # MISSISSIPPI-COVID-data-collection
-Collecting daily COVID data for different counties in MISSISSIPPI for a COVID project:
-
-Personal project aims:
-1) to collect daily COVID data by race and by ethnicity in the different counties of Mississippi
-2) to reduce time spending on arithmetic everyday when it takes the computer a few second
-3) practice coding in python
+I am collecting daily COVID data for different counties in MISSISSIPPI for a COVID internship. The public health department of Missisipi updates COVID case count everyday in a PDF. It contains information for each counties by race and ethnicity (intersection). However, data is required to be separatedly recorded as by race and by ethnicity instead.
+I am getting tired of spending an hour on arithmetic everyday when it takes the computer a few second to do so. Also I think it would be fun to learn to import data from a PDF with python. 
