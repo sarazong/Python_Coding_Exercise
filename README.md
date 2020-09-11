@@ -1,5 +1,5 @@
 # MISSISSIPPI-COVID-data-collection
-Collecting daily COVID data for different counties in MISSISSIPPI for BroadStreet COVID project:
+Collecting daily COVID data for different counties in MISSISSIPPI for a COVID project:
 
 Personal project aims:
 1) to collect daily COVID data by race and by ethnicity in the different counties of Mississippi
