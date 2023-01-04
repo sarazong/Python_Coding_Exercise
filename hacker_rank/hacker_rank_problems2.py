@@ -127,7 +127,25 @@ def strangeCounter(t):
 
     return initial - (t - 1)
 
-# 18. Almost Sorted (https://www.hackerrank.com/challenges/almost-sorted/problem?isFullScreen=true)
+
+# 18. Sherlock and Array (https://www.hackerrank.com/challenges/sherlock-and-array/problem?isFullScreen=true)
+def balancedSums(arr):
+    if len(arr) == 1:
+        return "YES"
+    elif arr.count(0) == len(arr) - 1:
+        return "YES"
+    else:
+        arr_sum = sum(arr)
+        cumulative_sum = 0
+        for i in range(1, len(arr)-1):
+            cumulative_sum += arr[i-1]
+            if (arr_sum - arr[i]) % 2 == 0 and (arr_sum - arr[i]) // 2 == cumulative_sum:
+                return "YES"
+        else:
+            return "NO"
+
+
+# 19. Almost Sorted (https://www.hackerrank.com/challenges/almost-sorted/problem?isFullScreen=true)
 def almostSorted(arr):
     ordered = sorted(arr)
 
@@ -153,7 +171,7 @@ def almostSorted(arr):
             print("no")
 
 
-# 19. Goodland Electricity (https://www.hackerrank.com/challenges/pylons/problem?isFullScreen=true)
+# 20. Goodland Electricity (https://www.hackerrank.com/challenges/pylons/problem?isFullScreen=true)
 def pylons(k, arr):
     plant_ind = [i for i in range(len(arr)) if arr[i] == 1]
 
@@ -177,3 +195,5 @@ def pylons(k, arr):
                     count += 1
 
         return count + 1
+
+
